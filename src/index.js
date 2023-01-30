@@ -68,10 +68,10 @@ module.exports = function toReadable (number) {
         let num = number - number.toString()[0] * 100;
         //console.log(num);
         if(num > 20) {
-          console.log(`${digits[number.toString()[0]]} hundred ${decimal[number.toString()[1] * 10]} ${digits[number.toString()[2]]}`);
+          //console.log(`${digits[number.toString()[0]]} hundred ${decimal[number.toString()[1] * 10]} ${digits[number.toString()[2]]}`);
           return `${digits[number.toString()[0]]} hundred ${decimal[number.toString()[1] * 10]} ${digits[number.toString()[2]]}`;
         } else {
-          console.log(`${digits[number.toString()[0]]} hundred ${digits[num]}`);
+          //console.log(`${digits[number.toString()[0]]} hundred ${digits[num]}`);
           return `${digits[number.toString()[0]]} hundred ${digits[num]}`;
         }
       }
